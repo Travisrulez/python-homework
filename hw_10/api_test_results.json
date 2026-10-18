@@ -1,0 +1,45 @@
+{
+  "health": {
+    "method": "GET",
+    "path": "/health",
+    "status_code": 200,
+    "response": {
+      "status": "ok",
+      "model_loaded": true
+    }
+  },
+  "predict_get": {
+    "method": "GET",
+    "path": "/predict_get",
+    "status_code": 200,
+    "response": {
+      "predicted_price_rub": 20113782.87,
+      "price_per_sqm_rub": 335229.71,
+      "currency": "RUB",
+      "features": {
+        "city": "Москва",
+        "total_square": 60.0,
+        "rooms": 2,
+        "floor": 5
+      },
+      "note": "Учебный прогноз по объявлениям, не оценочное заключение"
+    }
+  },
+  "predict_post": {
+    "method": "POST",
+    "path": "/predict_post",
+    "status_code": 200,
+    "response": {
+      "predicted_price_rub": 20113782.87,
+      "price_per_sqm_rub": 335229.71,
+      "currency": "RUB",
+      "features": {
+        "city": "Москва",
+        "total_square": 60.0,
+        "rooms": 2,
+        "floor": 5
+      },
+      "note": "Учебный прогноз по объявлениям, не оценочное заключение"
+    }
+  }
+}
